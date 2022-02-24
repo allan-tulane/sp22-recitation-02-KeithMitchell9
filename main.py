@@ -68,10 +68,11 @@ def test_work():
   assert work_calc(8, 3, 2, lambda n: 1) == 40
 
 def test_span():
-	""" done. """
-	assert span_calc(10, 2, 2, lambda n: 1) == 4
-	assert span_calc(20, 1, 2, lambda n: n*n) == 530
-	assert span_calc(30, 3, 2, lambda n: n) == 56
+  assert span_calc(10, 2, 2, lambda n: 1) == 4
+  assert span_calc(20, 1, 2, lambda n: n*n) == 530
+  assert span_calc(30, 3, 2, lambda n: n) == 56
+  assert span_calc(10, 2, 2, lambda n: n) == 18
+  assert span_calc(10, 2, 2, lambda n: n*n) == 130
 
 def compare_work(work_fn1, work_fn2, sizes=[10, 20, 50, 100, 1000, 5000, 10000]):
   

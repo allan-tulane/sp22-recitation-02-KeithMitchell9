@@ -47,6 +47,8 @@ where $W(1) = 1$.
 
 - [ ] 4. (2 point) Now, derive the asymptotic behavior of $W(n)$ using $f(n) = 1$, $f(n) = \log n$ and $f(n) = n$. Then, generate actual values for $W(n)$ for your code and confirm that the trends match your derivations.
 
+When f(n) == 1, W(n) is O(1). When f(n) == n^2, W(n) is O(n^2). When f(n) == n, W(n) is O(n * log(n))
+
 work_calc(10, 2, 2, lambda n: 1) == 15
   
 work_calc(20, 1, 2, lambda n: n*n) == 530
